@@ -22,13 +22,3 @@ def invert(A:np.array):
                 for j in range(i+1,n,1):
                     AE[n-j-1]=AE[n-j-1]-AE[n-i-1]*AE[n-j-1,n-i-1]
     return AE
-
-a = np.array([[0.25,0,0,0],
-              [0,0.25,0,0],
-              [0,0,0.2,0],
-              [0,0,0,0.2]],dtype=float)
-print(a)
-a_inv=invert(a)
-print(a_inv)
-
-    
